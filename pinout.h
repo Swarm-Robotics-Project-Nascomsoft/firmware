@@ -24,12 +24,12 @@ const uint8_t HEARTBEAT_PIN = 14;      // kept: heartbeat LED logic unchanged - 
 // spaced out and arbitrary - they do NOT reflect real ESP32 DevKit pin suitability
 // (e.g. avoid input-only pins for outputs, avoid strapping pins, avoid ADC2 pins if WiFi is
 // active). Pick real values tomorrow with the datasheet in hand.
-const uint8_t MOTOR1_IN1_PIN = 32;   // TODO CONFIRM
-const uint8_t MOTOR1_IN2_PIN = 33;   // TODO CONFIRM
+const uint8_t MOTOR1_IN1_PIN = 26;   // TODO CONFIRM
+const uint8_t MOTOR1_IN2_PIN = 27;   // TODO CONFIRM
 const uint8_t MOTOR1_ENA_PIN = 25;   // TODO CONFIRM - must support LEDC PWM output
-const uint8_t MOTOR2_IN3_PIN = 26;   // TODO CONFIRM
-const uint8_t MOTOR2_IN4_PIN = 27;   // TODO CONFIRM
-const uint8_t MOTOR2_ENB_PIN = 13;   // TODO CONFIRM - must support LEDC PWM output
+const uint8_t MOTOR2_IN3_PIN = 32;   // TODO CONFIRM
+const uint8_t MOTOR2_IN4_PIN = 33;   // TODO CONFIRM
+const uint8_t MOTOR2_ENB_PIN = 21;   // TODO CONFIRM - must support LEDC PWM output
 
 // --- NEW: Battery voltage sense (Module 3) ---
 const uint8_t BATT_SENSE_PIN = 34;   // TODO CONFIRM - GPIO34 is ADC1-only, input-only, good

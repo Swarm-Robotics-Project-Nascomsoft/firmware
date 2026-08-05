@@ -4,8 +4,8 @@
 #include "drivetrain.h"
 
 
-static const char* ssid = "CMU-DEVICE";
-static const char* password = "";
+static const char* ssid = "Mahmud";
+static const char* password = "STARLIGHTERS";
 
 static WebServer server(80);
 
@@ -38,7 +38,7 @@ void serverInit(void) {
     WiFi.begin(ssid, password);
     while(WiFi.status() != WL_CONNECTED) {
         Serial.println("Connecting...");
-        delay(75);
+        delay(1000);
     }
     server.on("/", handlerFunction);
     Serial.println(WiFi.localIP());

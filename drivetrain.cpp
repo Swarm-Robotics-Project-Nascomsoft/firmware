@@ -16,7 +16,7 @@ static const uint8_t PWM_MAX_DUTY = 255;
 static volatile uint32_t lastCommandTime_ms;
 
 static volatile bool motorsStopped = true;
-static const uint32_t driveTimeout_ms = 1000;
+static const uint32_t driveTimeout_ms = 8000;
 
 // NEW: sets one motor's direction (via in1/in2) and speed (via PWM channel) from a single
 // 0-180 value, where 90 = stop, >90 = forward, <90 = reverse. This replaces what

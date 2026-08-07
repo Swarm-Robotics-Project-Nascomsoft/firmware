@@ -1,6 +1,7 @@
 #include "pinout.h"
 #include "drivetrain.h"
 #include "server.h"
+#include "screen.h"
 
 // Heartbeat Task
 void heartbeatTask(void) {
@@ -42,10 +43,12 @@ void setup() {
 
     drivetrainInit();
     serverInit();
+    screenInit();
 }
 
 void loop() {
     serverTask();
+    screenTask();
     heartbeatTask();
     voltageSenseTask();
     drivetrainTask();

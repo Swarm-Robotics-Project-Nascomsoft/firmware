@@ -3,7 +3,7 @@ import urllib.request
 import urllib.parse
 
 # Replace with your ESP32 robot's actual local IP address
-ROBOT_IP = "<ROBOT_IP>"
+ROBOT_IP = "172.20.10.2"
 URL = f"http://{ROBOT_IP}/"
 
 def send_motor2(servo2_val):

@@ -29,7 +29,7 @@ const uint8_t MOTOR1_IN2_PIN = 27;   // TODO CONFIRM
 const uint8_t MOTOR1_ENA_PIN = 25;   // TODO CONFIRM - must support LEDC PWM output
 const uint8_t MOTOR2_IN3_PIN = 32;   // TODO CONFIRM
 const uint8_t MOTOR2_IN4_PIN = 33;   // TODO CONFIRM
-const uint8_t MOTOR2_ENB_PIN = 21;   // TODO CONFIRM - must support LEDC PWM output
+const uint8_t MOTOR2_ENB_PIN = 4;   // TODO CONFIRM - must support LEDC PWM output
 
 // --- NEW: Battery voltage sense (Module 3) ---
 const uint8_t BATT_SENSE_PIN = 34;   // TODO CONFIRM - GPIO34 is ADC1-only, input-only, good

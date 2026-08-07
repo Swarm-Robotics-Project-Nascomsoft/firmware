@@ -30,13 +30,11 @@ static void driveMotor(uint8_t speed, uint8_t in1Pin, uint8_t in2Pin, uint8_t pw
     } else if (speed > zeroSpeed) {
         digitalWrite(in1Pin, HIGH);
         digitalWrite(in2Pin, LOW);
-        uint32_t duty = (uint32_t)(speed - zeroSpeed) * PWM_MAX_DUTY / (maxSpeed - zeroSpeed);
-        ledcWrite(pwmPin, duty);
+        ledcWrite(pwmPin, PWM_MAX_DUTY);
     } else {
         digitalWrite(in1Pin, LOW); 
         digitalWrite(in2Pin, HIGH);
-        uint32_t duty = (uint32_t)(zeroSpeed - speed) * PWM_MAX_DUTY / zeroSpeed;
-        ledcWrite(pwmPin, duty);
+        ledcWrite(pwmPin, PWM_MAX_DUTY);
     }
 }
 

@@ -37,7 +37,7 @@ void serverInit(void) {
 
     WiFi.begin(ssid, password);
     while(WiFi.status() != WL_CONNECTED) {
-        Serial.println("Connecting...");
+        Serial.println("Connecting to router...");
         delay(1000);
     }
     server.on("/", handlerFunction);
